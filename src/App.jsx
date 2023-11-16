@@ -10,7 +10,7 @@ function App() {
   const addTodo= (todo)=>{
     settodos((prev)=>[{id:Date.now(),...todo}, ...prev])
   }
-
+/**? */
 
 const updateTodo=(id, todo)=>{
   settodos((prev)=>prev.map((prevtodo)=>(prevtodo.id=== id ? todo : prevtodo)))
